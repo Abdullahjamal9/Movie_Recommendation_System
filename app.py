@@ -1,13 +1,15 @@
 import pickle
+import pandas as pd
 import streamlit as st
 import requests
 from PIL import Image
+from io import BytesIO
 
 # 🔹 Helper to load pickle from Hugging Face URL
 def load_pickle_from_url(url):
     response = requests.get(url)
     response.raise_for_status()
-    return pickle.loads(response.content)
+    return pickle.load(BytesIO(response.content))
 
 def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US"
