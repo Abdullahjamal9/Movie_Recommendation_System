@@ -1,4 +1,3 @@
-pickle
+pytorch-lightning
 streamlit
-PTL
 requests
