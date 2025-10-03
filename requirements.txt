@@ -1,4 +1,4 @@
 pickle
 streamlit
 PTL
-request
+requests
