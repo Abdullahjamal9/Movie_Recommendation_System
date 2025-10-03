@@ -1,3 +1,7 @@
 pytorch-lightning
 streamlit
+pandas
+numpy
+scikit-learn
 requests
+
