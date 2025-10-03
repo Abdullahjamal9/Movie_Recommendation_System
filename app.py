@@ -37,10 +37,10 @@ st.header('Film Recommendation System')
 
 # 🔹 Load pickle files from Hugging Face Dataset repo
 movies = load_pickle_from_url(
-    "https://huggingface.co/datasets/Abdullahjamal984/movie-recs-data/blob/main/movie_list.pkl"
+    "https://huggingface.co/datasets/Abdullahjamal984/movie-recs-data/resolve/main/movie_list.pkl"
 )
 similarity = load_pickle_from_url(
-    "https://huggingface.co/datasets/Abdullahjamal984/movie-recs-data/blob/main/similarity.pkl"
+    "https://huggingface.co/datasets/Abdullahjamal984/movie-recs-data/resolve/main/similarity.pkl"
 )
 
 # 🔹 Movie selection
